@@ -57,6 +57,7 @@ class HashTagSearchView(generic.TemplateView):
 
     def get(self, request, *args, **kwargs):
         form = self.form_class()
+        print("Hast tag view")
         return render(request, self.template_name, {'form': form})
 
     def post(self, request, *args, **kwargs):
